@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "945281104592",
+    "project_id": "foodsharecc",
+    "storage_bucket": "foodsharecc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945281104592:android:b63bebd0fbf04272e77cd5",
+        "android_client_info": {
+          "package_name": "com.coolcats.foodsharecc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945281104592-nkfirla0c7enn8ebnk3rgcio9jd9n9ak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.coolcats.foodsharecc",
+            "certificate_hash": "13dfcbbf3abcc07bb4946ca300975ad6d5366012"
+          }
+        },
+        {
+          "client_id": "945281104592-jpu270n1lec70j738c4lb9nmp7hvqgbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEYkb0bYczEicP5KatY8uih1kfh74Z4Ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945281104592-jpu270n1lec70j738c4lb9nmp7hvqgbb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
