@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FoodShareCC</string>
+    <string name="confirmation_title">Confirmation Email Sent</string>
+    <string name="okay">Okay</string>
 </resources>

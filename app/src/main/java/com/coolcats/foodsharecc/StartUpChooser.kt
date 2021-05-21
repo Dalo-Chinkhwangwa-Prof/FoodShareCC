@@ -11,11 +11,10 @@ class StartUpChooser : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        FirebaseAuth.getInstance().currentUser?.let{
+        if (FirebaseAuth.getInstance().currentUser != null && FirebaseAuth.getInstance().currentUser?.isEmailVerified != false) {
             //Logged in...navigate to home
             openIntent = Intent(this, HomePageActivity::class.java)
-        } ?:
-        run {
+        } else {
             //Not logged in... navigate to login
             openIntent = Intent(this, SignInActivity::class.java)
         }
