@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodShareCC">
-        <activity android:name=".HomePageActivity"></activity>
+        <activity android:name=".HomePageActivity"/>
         <activity android:name=".StartUpChooser">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignInActivity"></activity>
+        <activity android:name=".SignInActivity"/>
+        
+        <provider
+            android:authorities="com.coolcats.foodsharecc.provider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path">
+            </meta-data>
+        </provider>
     </application>
 
 </manifest>

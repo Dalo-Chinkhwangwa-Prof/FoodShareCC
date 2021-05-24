@@ -2,6 +2,8 @@ package com.coolcats.foodsharecc
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -27,7 +29,10 @@ class HomePageActivity : AppCompatActivity() {
                             foodList.add(item)
                         }
                     }
-                    postAdapter.posts = foodList
+                    postAdapter.posts = foodList/*.filter {
+                        Log.d("TAG_X", "'${it.userId}' == '${FirebaseAuth.getInstance().currentUser?.uid}'")
+                        it.userId == FirebaseAuth.getInstance().currentUser?.uid
+                    }*/
                 }
                 override fun onCancelled(error: DatabaseError) {
                 }
